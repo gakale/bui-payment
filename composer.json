@@ -1,0 +1,36 @@
+{
+  "name": "bui-corporation/bui-payment",
+  "description": "Un package Laravel pour intégrer les paiements avec l'API Bui Corporation.",
+  "type": "library",
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^11.7",
+    "guzzlehttp/guzzle": "^7.8",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bui\\Payment\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bui\\Payment\\BuiPaymentServiceProvider"
+      ],
+      "aliases": {
+        "BuiPayment": "Bui\\Payment\\Facades\\BuiPayment"
+      }
+    }
+  },
+  "authors": [
+    {
+      "name": "gnakaleh",
+      "email": "gnakaleroland@gmail.com",
+      "homepage": "https://github.com/gakale",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
